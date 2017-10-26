@@ -35,6 +35,23 @@ image_angle = direction;
 /// @DnDArgument : "var" "hp"
 if(hp == 0)
 {
+	/// @DnDAction : YoYo Games.Audio.Audio_Set_Pitch
+	/// @DnDVersion : 1
+	/// @DnDHash : 7FDF6FAD
+	/// @DnDParent : 00AD6241
+	/// @DnDArgument : "sound" "snd_death"
+	/// @DnDArgument : "pitch" "random_range(0.8, 1.2)"
+	/// @DnDSaveInfo : "sound" "750491e4-98f1-408c-bffd-44e8db25bcd6"
+	audio_sound_pitch(snd_death, random_range(0.8, 1.2));
+
+	/// @DnDAction : YoYo Games.Audio.Play_Audio
+	/// @DnDVersion : 1
+	/// @DnDHash : 33A3EA72
+	/// @DnDParent : 00AD6241
+	/// @DnDArgument : "soundid" "snd_death"
+	/// @DnDSaveInfo : "soundid" "750491e4-98f1-408c-bffd-44e8db25bcd6"
+	audio_play_sound(snd_death, 0, 0);
+
 	/// @DnDAction : YoYo Games.Common.Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 16DD25B5

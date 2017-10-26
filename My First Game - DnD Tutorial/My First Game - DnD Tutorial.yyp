@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "378775f8-232c-4fe2-85c8-eaa88e911278",
+            "Value": {
+                "id": "50baeb86-f0c6-412e-9b5b-bd74f25d9447",
+                "resourcePath": "sprites\\spr_titlescreen\\spr_titlescreen.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3ee782b4-4119-4158-9cf1-b5305c0d32c9",
             "Value": {
                 "id": "b0dd9a7a-c7b1-46c3-a183-d628149e1783",
@@ -84,6 +92,14 @@
                 "id": "09664c79-0d52-4d3f-8914-2ba7295da58b",
                 "resourcePath": "views\\4828b867-3112-469f-8da6-b0f9af19f6d5.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "4bab8056-7700-4c7e-9884-cbf02ac2bdab",
+            "Value": {
+                "id": "db883d84-a80f-46c0-934e-4de7f5e269c3",
+                "resourcePath": "objects\\obj_title\\obj_title.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -151,6 +167,14 @@
             }
         },
         {
+            "Key": "750491e4-98f1-408c-bffd-44e8db25bcd6",
+            "Value": {
+                "id": "11222236-503f-442b-941d-9471af606690",
+                "resourcePath": "sounds\\snd_death\\snd_death.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "7dd53fcc-69a3-4edf-a13a-d1315acbb653",
             "Value": {
                 "id": "01da22bd-a29e-4370-a082-7be4c455ae14",
@@ -207,6 +231,14 @@
             }
         },
         {
+            "Key": "d36156a7-492d-4c9e-97c1-f81215179ca0",
+            "Value": {
+                "id": "add4e2ba-87f1-4878-8b78-bb995db89f02",
+                "resourcePath": "sprites\\spr_darktile\\spr_darktile.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d46b0afd-bfc1-4786-91dc-daf269374c90",
             "Value": {
                 "id": "0356b446-016b-4446-bfc4-8aff5d4ae7de",
@@ -220,6 +252,14 @@
                 "id": "c566b2e9-5caf-4ec5-bdcb-35407d37a0b3",
                 "resourcePath": "objects\\obj_player\\obj_player.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e0e6d545-2842-4d76-80d5-774bb19f0c52",
+            "Value": {
+                "id": "101980b5-359f-4cf7-8c07-41bca8868ea2",
+                "resourcePath": "rooms\\rm_titles\\rm_titles.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
