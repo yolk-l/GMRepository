@@ -8,6 +8,6 @@ hp = 5;
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 020DCAD5
-/// @DnDArgument : "expr" "1.5"
+/// @DnDArgument : "expr" "3"
 /// @DnDArgument : "var" "spd"
-spd = 1.5;
+spd = 3;

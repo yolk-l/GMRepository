@@ -3,16 +3,17 @@
 /// @DnDHash : 744C5199
 /// @DnDArgument : "var" "xx"
 /// @DnDArgument : "var_temp" "1"
-/// @DnDArgument : "max" "room_width"
-var xx = (random_range(0, room_width));
+/// @DnDArgument : "min" "room_width/8"
+/// @DnDArgument : "max" "room_width*7/8"
+var xx = (random_range(room_width/8, room_width*7/8));
 
 /// @DnDAction : YoYo Games.Random.Get_Random_Number
 /// @DnDVersion : 1
 /// @DnDHash : 57B50F7A
 /// @DnDArgument : "var" "yy"
 /// @DnDArgument : "var_temp" "1"
-/// @DnDArgument : "max" "room_height"
-var yy = (random_range(0, room_height));
+/// @DnDArgument : "max" "room_height/2"
+var yy = (random_range(0, room_height/2));
 
 /// @DnDAction : YoYo Games.Instances.Create_Instance
 /// @DnDVersion : 1

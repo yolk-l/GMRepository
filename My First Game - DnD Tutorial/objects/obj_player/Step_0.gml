@@ -12,8 +12,8 @@ if (l5DBAE84E_0)
 	/// @DnDParent : 5DBAE84E
 	/// @DnDArgument : "var" "x"
 	/// @DnDArgument : "op" "3"
-	/// @DnDArgument : "value" "room_width"
-	if(x <= room_width)
+	/// @DnDArgument : "value" "room_width*7/8"
+	if(x <= room_width*7/8)
 	{
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
@@ -40,7 +40,8 @@ if (l6B9CE995_0)
 	/// @DnDParent : 6B9CE995
 	/// @DnDArgument : "var" "x"
 	/// @DnDArgument : "op" "4"
-	if(x >= 0)
+	/// @DnDArgument : "value" "room_width/8"
+	if(x >= room_width/8)
 	{
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
@@ -65,8 +66,8 @@ if (l43AB59EA_0)
 	/// @DnDVersion : 1
 	/// @DnDHash : 06BC7D07
 	/// @DnDParent : 43AB59EA
-	/// @DnDArgument : "expr" "y >= 0"
-	if(y >= 0)
+	/// @DnDArgument : "expr" "y >= room_height/2"
+	if(y >= room_height/2)
 	{
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
