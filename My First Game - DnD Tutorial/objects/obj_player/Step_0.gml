@@ -106,54 +106,32 @@ if (l1E8EBC1C_0)
 	}
 }
 
-/// @DnDAction : YoYo Games.Common.Temp_Variable
+/// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
-/// @DnDHash : 36F36E99
-/// @DnDArgument : "var" "dir"
-/// @DnDArgument : "value" "point_direction(x,y,mouse_x,mouse_y)"
-var dir = point_direction(x,y,mouse_x,mouse_y);
-
-/// @DnDAction : YoYo Games.Instances.Sprite_Rotate
-/// @DnDVersion : 1
-/// @DnDHash : 09D6532E
-/// @DnDArgument : "angle" "dir"
-image_angle = dir;
-
-/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Mouse_Down
-/// @DnDVersion : 1.1
-/// @DnDHash : 52D3AA0D
-var l52D3AA0D_0;
-l52D3AA0D_0 = mouse_check_button(mb_left);
-if (l52D3AA0D_0)
+/// @DnDHash : 3F3D473A
+/// @DnDArgument : "var" "cooldown"
+/// @DnDArgument : "op" "1"
+/// @DnDArgument : "value" "1"
+if(cooldown < 1)
 {
-	/// @DnDAction : YoYo Games.Common.If_Variable
+	/// @DnDAction : YoYo Games.Instances.Create_Instance
 	/// @DnDVersion : 1
-	/// @DnDHash : 3F3D473A
-	/// @DnDParent : 52D3AA0D
+	/// @DnDHash : 15BD2955
+	/// @DnDParent : 3F3D473A
+	/// @DnDArgument : "xpos" "x"
+	/// @DnDArgument : "ypos" "y"
+	/// @DnDArgument : "objectid" "obj_bullet"
+	/// @DnDArgument : "layer" ""BulletsLayer""
+	/// @DnDSaveInfo : "objectid" "5c756a4c-714b-4de1-8c1a-14f6f5093187"
+	instance_create_layer(x, y, "BulletsLayer", obj_bullet);
+
+	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 0A6DB70D
+	/// @DnDParent : 3F3D473A
+	/// @DnDArgument : "expr" "10"
 	/// @DnDArgument : "var" "cooldown"
-	/// @DnDArgument : "op" "1"
-	/// @DnDArgument : "value" "1"
-	if(cooldown < 1)
-	{
-		/// @DnDAction : YoYo Games.Instances.Create_Instance
-		/// @DnDVersion : 1
-		/// @DnDHash : 15BD2955
-		/// @DnDParent : 3F3D473A
-		/// @DnDArgument : "xpos" "x"
-		/// @DnDArgument : "ypos" "y"
-		/// @DnDArgument : "objectid" "obj_bullet"
-		/// @DnDArgument : "layer" ""BulletsLayer""
-		/// @DnDSaveInfo : "objectid" "5c756a4c-714b-4de1-8c1a-14f6f5093187"
-		instance_create_layer(x, y, "BulletsLayer", obj_bullet);
-	
-		/// @DnDAction : YoYo Games.Common.Variable
-		/// @DnDVersion : 1
-		/// @DnDHash : 0A6DB70D
-		/// @DnDParent : 3F3D473A
-		/// @DnDArgument : "expr" "10"
-		/// @DnDArgument : "var" "cooldown"
-		cooldown = 10;
-	}
+	cooldown = 10;
 }
 
 /// @DnDAction : YoYo Games.Common.Variable

@@ -1,9 +1,8 @@
-/// @DnDAction : YoYo Games.Movement.Set_Direction_Point
-/// @DnDVersion : 1
-/// @DnDHash : 63F5BD6A
-/// @DnDArgument : "x" "mouse_x"
-/// @DnDArgument : "y" "mouse_y"
-direction = point_direction(x, y, mouse_x, mouse_y);
+/// @DnDAction : YoYo Games.Movement.Set_Direction_Fixed
+/// @DnDVersion : 1.1
+/// @DnDHash : 33048280
+/// @DnDArgument : "direction" "90"
+direction = 90;
 
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
